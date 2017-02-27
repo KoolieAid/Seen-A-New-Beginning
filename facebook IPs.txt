@@ -42,3 +42,23 @@
 	31.13.92.10    ne-np.facebook.com
 	31.13.92.10    bg-bg.facebook.com
 	31.13.92.10    el-gr.facebook.com
+	#Youtube starts here
+	216.58.212.206    families.google.com
+	216.58.212.206    payments.google.com
+	216.58.212.206    consent.google.com
+	216.58.212.195    fonts.gstatic.com
+	216.58.212.206    apis.google.com
+	216.58.212.193    yt3.ggpht.com
+	216.58.212.205    accounts.google.com
+	172.217.17.98    pagead2.googlesyndication.com
+	216.58.212.194    pubads.g.doubleclick.net
+	216.58.212.206    support.google.com
+	216.58.212.206    plus.google.com
+	193.104.215.66    get.adobe.com
+	216.58.212.206    www.youtube.com
+	216.58.212.206    youtube.com
+	216.58.212.195    www.gstatic.com
+	216.58.212.206    i.ytimg.com
+	216.58.212.195    www.google.nl
+	216.58.212.238    m.youtube.com
+	216.58.212.206    s.ytimg.com
