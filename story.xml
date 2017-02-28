@@ -936,7 +936,7 @@
                <sent>1000</sent>
             </send_duration>
 			<typo>
-				<concat> </concat>
+				<concat>.</concat>
 				<remove_until>47</remove_until>
 			</typo>
 			<typo>
