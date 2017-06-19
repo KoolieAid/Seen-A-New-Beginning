@@ -182,7 +182,7 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>Why not?U+1F613</content>
+            <content>Why not?U+1F610</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1239,7 +1239,7 @@
             <then>VAR,gbook,romance</then>
          </condition>
          <msg no="1">
-            <content>It&apos;s a book about %gbook%. Thanks U+1F60A</content>
+            <content>It&apos;s a book about %gbook%. Thanks U+263A</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
