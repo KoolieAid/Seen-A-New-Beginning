@@ -26,7 +26,7 @@
       </message>
       <message no="1.2" type="player">
          <reply no="1">
-            <content>Hi %msgr_fname% 😊</content>
+            <content>Hi %msgr_fname% U+1F60A</content>
             <preview>Hi %msgr_nick%</preview>
             <send_duration>
                <delivered>2500</delivered>
@@ -50,7 +50,7 @@
       </message>
       <message no="1.4" type="player">
          <reply no="1">
-            <content>I&apos;m going to spend some time with my family 😉</content>
+            <content>I&apos;m going to spend some time with my family U+1F609</content>
             <preview>Spend time with family</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -79,7 +79,7 @@
                <sent>1000</sent>
             </send_duration>
             <typo>
-               <concat>I want to spend some time with you 😍😍</concat>
+               <concat>I want to spend some time with you U+1F60D U+1F60D</concat>
                <remove_until>37</remove_until>
             </typo>
             <typo>
@@ -182,7 +182,7 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>Why not?😐</content>
+            <content>Why not?U+1F613</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -198,7 +198,7 @@
             <then>SKIPTO,11</then>
          </condition>
          <msg no="1">
-            <content>Let&apos;s meet up at the park at 6PM 😉</content>
+            <content>Let&apos;s meet up at the park at 6PM U+1F609</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -226,7 +226,7 @@
       </message>
       <message no="1.12" type="msgr">
          <msg no="1">
-            <content>Dude, just do it after we meet up 😂</content>
+            <content>Dude, just do it after we meet up U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -256,7 +256,7 @@
             <then>FADE_MSG,1,At the meet up</then>
          </condition>
          <reply no="1">
-            <content>Where are you? 😠</content>
+            <content>Where are you? U+1F620</content>
             <preview>where</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -268,7 +268,7 @@
       </message>
       <message no="1.15" type="player">
          <reply no="1">
-            <content>I&apos;ve been waiting for 2 hours already 👿</content>
+            <content>I&apos;ve been waiting for 2 hours already U+1F47F</content>
             <preview>wait</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -333,7 +333,7 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>I feel safer with Mike. 😋</content>
+            <content>I feel safer with Mike. U+1F60B</content>
             <end_delay>5000</end_delay>
             <typing>
                <show>yes</show>
@@ -433,7 +433,7 @@
       </message>
       <message no="2.4" type="msgr">
         <msg no="1">
-            <content>What? What do you mean? 😕</content>
+            <content>What? What do you mean? U+1F615</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -573,7 +573,7 @@
       <chdesc>At least that&apos;s what you think </chdesc>
       <message no="3.1" type="player">
          <reply no="1">
-            <content>Happy Birthday 😂😂🎂🎈🎉🎉</content>
+            <content>Happy Birthday U+1F602U+1F602U+1F382U+1F388U+1F389U+1F389	</content>
             <preview>birlrth</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -585,7 +585,7 @@
       </message>
       <message no="3.2" type="msgr">
          <msg no="1">
-            <content>What? Today isnt my birthday 😕</content>
+            <content>What? Today isnt my birthday U+1F615</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -721,7 +721,7 @@
       </message>
       <message no="3.11" type="msgr">
          <msg no="1">
-            <content>What? It&apos;s not Mike Fisher. 😂😂</content>
+            <content>What? It&apos;s not Mike Fisher. U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -733,7 +733,7 @@
       </message>
       <message no="3.12" type="player">
          <reply no="1">
-            <content>Really? You got me so hard 😂😂</content>
+            <content>Really? You got me so hard U+1F602U+1F602</content>
             <preview>J</preview>
             <send_duration>
                <delivered>1</delivered>
@@ -745,7 +745,7 @@
       </message>
       <message no="3.13" type="msgr">
          <msg no="1">
-            <content>😂😂</content>
+            <content>U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -833,7 +833,7 @@
       </message>
       <message no="3.20" type="msgr">
          <msg no="1">
-            <content>Really? I swear I remember saying that. 😕</content>
+            <content>Really? I swear I remember saying that. U+1F615</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -905,7 +905,7 @@
       </message>
       <message no="3.25" type="msgr">
          <msg no="1">
-            <content>Pretty please? 😇😇</content>
+            <content>Pretty please? U+1F607U+1F607</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1007,7 +1007,7 @@
       </message>
       <message no="3.32" type="msgr">
          <msg no="1">
-            <content>It&apos;s May 17 😂</content>
+            <content>It&apos;s May 17 U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1079,7 +1079,7 @@
       </message>
       <message no="4.4" type="player">
          <reply no="1">
-            <content>How could I forget 😂😂</content>
+            <content>How could I forget U+1F602U+1F602</content>
             <preview>How could I forget</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1106,7 +1106,7 @@
             <then>SKIPTO,6</then>
          </condition>
          <msg no="1">
-            <content>😂😂</content>
+            <content>U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1130,7 +1130,7 @@
       </message>
       <message no="4.7" type="msgr">
          <msg no="1">
-            <content>It&apos;s my birthday. 😑</content>
+            <content>It&apos;s my birthday. U+1F611</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1142,7 +1142,7 @@
       </message>
       <message no="4.8" type="player">
          <reply no="1">
-            <content>Oh yea, my bad 😂😂</content>
+            <content>Oh yea, my bad U+1F602U+1F602</content>
             <preview>O</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1154,7 +1154,7 @@
       </message>
       <message no="4.9" type="player">
          <reply no="1">
-            <content>Happy birthday!🎉🎉🎈🎂</content>
+            <content>Happy birthday!U+1F389U+1F389U+1F388U+1F382</content>
             <preview>H</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1166,7 +1166,7 @@
       </message>
       <message no="4.10" type="msgr">
          <msg no="1">
-            <content>Where&apos;s my gift?😂</content>
+            <content>Where&apos;s my gift?U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1188,7 +1188,7 @@
             </send_duration>
          </reply>
          <reply no="2">
-            <content>Check out your mailbox 😂</content>
+            <content>Check out your mailbox U+1F602</content>
             <preview>Tell her</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1239,7 +1239,7 @@
             <then>VAR,gbook,romance</then>
          </condition>
          <msg no="1">
-            <content>It&apos;s a book about %gbook%. Thanks 😊</content>
+            <content>It&apos;s a book about %gbook%. Thanks U+1F60A</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1251,7 +1251,7 @@
       </message>
       <message no="4.15" type="player">
          <reply no="1">
-            <content>That %gbook% book costs a fortune 😂😂</content>
+            <content>That %gbook% book costs a fortune U+1F602U+1F602</content>
             <preview>Js</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1263,7 +1263,7 @@
       </message>
       <message no="4.16" type="msgr">
          <msg no="1">
-            <content>😂😂</content>
+            <content>U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1311,7 +1311,7 @@
       </message>
       <message no="5.3" type="player">
          <reply no="1">
-            <content>Long time no see %msgr_nick% 😉</content>
+            <content>Long time no see %msgr_nick% U+1F609</content>
             <preview>Meeting again</preview>
             <send_duration>
                <delivered>50</delivered>
@@ -1323,7 +1323,7 @@
       </message>
       <message no="5.4" type="msgr">
          <msg no="1">
-            <content>Yep 😂</content>
+            <content>Yep U+1F602</content>
             <end_delay>600</end_delay>
             <end>delay</end>
             <typing>
@@ -1336,7 +1336,7 @@
       </message>
       <message no="5.5" type="msgr">
          <msg no="1">
-            <content>Got any plans for Halloween? 😂😂</content>
+            <content>Got any plans for Halloween? U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1348,7 +1348,7 @@
       </message>
       <message no="5.6" type="player">
          <reply no="1">
-            <content>I&apos;m going to watch horror movies 😱😱</content>
+            <content>I&apos;m going to watch horror movies U+1F631U+1F631</content>
             <preview>Watch horror movies</preview>
             <send_duration>
                <delivered>30</delivered>
@@ -1358,7 +1358,7 @@
             </send_duration>
          </reply>
          <reply no="2">
-            <content>Trick or treating 😂😂😂</content>
+            <content>Trick or treating U+1F602U+1F602U+1F602</content>
             <preview>Trick or treating </preview>
             <send_duration>
                <delivered>30</delivered>
@@ -1385,7 +1385,7 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>Aren&apos;t you too old for that? 😂😂😂</content>
+            <content>Aren&apos;t you too old for that? U+1F602U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1402,7 +1402,7 @@
             <then>SKIPTO,14</then>
          </condition>
          <msg no="1">
-            <content>Can I join? Hahaha😂😂😂</content>
+            <content>Can I join? HahahaU+1F602U+1F602U+1F602</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1414,7 +1414,7 @@
       </message>
       <message no="5.9" type="player">
          <reply no="1">
-            <content>Sure 😂</content>
+            <content>Sure U+1F602</content>
             <preview>S</preview>
             <send_duration>
                <delivered>2</delivered>
@@ -1426,7 +1426,7 @@
       </message>
       <message no="5.10" type="player">
          <reply no="1">
-            <content>Will Mike be joining? 😁</content>
+            <content>Will Mike be joining? U+1F601</content>
             <preview>Mike</preview>
             <send_duration>
                <delivered>1</delivered>
@@ -1494,7 +1494,7 @@
       </message>
       <message no="5.15" type="msgr">
          <msg no="1">
-            <content>😁</content>
+            <content>U+1F601</content>
             <end_delay>2000</end_delay>
             <end>delay</end>
             <typing>
@@ -1507,7 +1507,7 @@
       </message>
       <message no="5.16" type="msgr">
          <msg no="1">
-            <content>I&apos;m bored...😐</content>
+            <content>I&apos;m bored...U+1F610</content>
             <end_delay>1000</end_delay>
             <end>delay</end>
             <typing>
@@ -1520,7 +1520,7 @@
       </message>
       <message no="5.17" type="player">
          <reply no="1">
-            <content>Me too 😐</content>
+            <content>Me too U+1F610</content>
             <preview>Me</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1825,7 +1825,7 @@
       </message>
       <message no="6.11" type="msgr">
          <msg no="1">
-            <content>Our teacher is giving us too many projects. 😣😣😥😦</content>
+            <content>Our teacher is giving us too many projects. U+1F623U+1F623U+1F625U+1F626</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1885,7 +1885,7 @@
       </message>
       <message no="6.16" type="player">
          <reply no="1">
-            <content>Oh yea 😂</content>
+            <content>Oh yea U+1F602</content>
             <preview>Le</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1897,7 +1897,7 @@
       </message>
       <message no="6.17" type="player">
          <reply no="1">
-            <content>Let me check my schedule first 😋</content>
+            <content>Let me check my schedule first U+1F60B</content>
             <preview>Let</preview>
             <send_duration>
                <delivered>1000</delivered>
