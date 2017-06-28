@@ -2,4 +2,4 @@
 This is a content for the story in "Seen" called "Seen: A New Beginning"
 Please create a branch first when you want to contribute
 # Contribute
-If you want to contribute to this project, please ping me in the Discord server.
+This story is now open-source, if you want to add some attributes from your own story, feel free to add them.
