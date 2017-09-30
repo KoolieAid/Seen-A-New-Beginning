@@ -1,18 +1,81 @@
 <story>
    <author>Koolie Aid </author>
-   <build_number>69</build_number>
+   <build_number>180</build_number>
    <chapter no="1">
-      <chdate>12/22/2019</chdate>
-      <chdesc>Hello - Aid December 22</chdesc>
+      <chdate>01/01/2020</chdate>
+      <chdesc>%msgr_nick% wants to talk to you
+December 22</chdesc>
       <message no="1.1" type="msgr">
-		<condition>
-			<if>VAR_CHECK,yes,msgr_nick,Nic</if>
-			<if>VAR_CHECK,yes,msgr_name,Nicole Tyler</if>
-			<then>VAR,msgr_fname,Nicole</then>
-			<then>VAR,msgr_full,Nicole Eva Fulton Tyler</then>
-			<else>COPY_VAR,msgr_name,msgr_full</else>
-			<else>COPY_VAR,msgr_nick,msgr_fname</else>
-		 </condition>
+         <msg no="1">
+            <content>@expr+Sponsors</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.2" type="msgr">
+         <msg no="1">
+            <content>Seen: Multiverse by Shikhar Trivedi</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.3" type="msgr">
+         <msg no="1">
+            <content>Josh And Isa by SmartieWrites</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.4" type="msgr">
+         <msg no="1">
+            <content>Electric Roots by l33t</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.5" type="msgr">
+         <msg no="1">
+            <content>@expr+Sponsors ends here</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.6" type="msgr">
+         <condition>
+            <else>COPY_VAR,msgr_nick,msgr_mnick</else>
+            <else>COPY_VAR,msgr_name,msgr_mfull</else>
+            <else>COPY_VAR,msgr_nick,msgr_fname</else>
+            <if>VAR_CHECK,no,msgr_name,Nicole Tyler</if>
+            <if>VAR_CHECK,no,msgr_nick,Nic</if>
+            <then>VAR,msgr_mnick,Nic</then>
+            <then>VAR,msgr_mfull,Nicole Tyler </then>
+            <then>VAR,msgr_fname,Nicole</then>
+         </condition>
          <msg no="1">
             <content>Hi %player_nick%</content>
             <end_delay>0</end_delay>
@@ -24,7 +87,7 @@
             </typing>
          </msg>
       </message>
-      <message no="1.2" type="player">
+      <message no="1.7" type="player">
          <reply no="1">
             <content>Hi %msgr_fname% 😊</content>
             <preview>Hi %msgr_nick%</preview>
@@ -36,9 +99,9 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.3" type="msgr">
+      <message no="1.8" type="msgr">
          <msg no="1">
-            <content>Got any plans for Christmas&apos;s Eve? ☺ </content>
+            <content>Got any plans for Christmas&apos;s Eve? 🙂</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -48,10 +111,10 @@
             </typing>
          </msg>
       </message>
-      <message no="1.4" type="player">
+      <message no="1.9" type="player">
          <reply no="1">
             <content>I&apos;m going to spend some time with my family 😉</content>
-            <preview>Spend time with family</preview>
+            <preview>Spend time with family </preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -79,16 +142,16 @@
                <sent>1000</sent>
             </send_duration>
             <typo>
-               <concat>I want to spend some time with you 😍😍</concat>
-               <remove_until>37</remove_until>
+               <concat> want to spend time with you 😍</concat>
+               <remove_until>31</remove_until>
             </typo>
             <typo>
-               <concat>&apos;ll just go to sleep.</concat>
+               <concat>I will just go to sleep</concat>
                <remove_until>0</remove_until>
             </typo>
          </reply>
       </message>
-      <message no="1.5" type="msgr">
+      <message no="1.10" type="msgr">
          <msg no="1">
             <content>Oh</content>
             <end_delay>0</end_delay>
@@ -100,10 +163,10 @@
             </typing>
          </msg>
       </message>
-      <message no="1.6" type="msgr">
+      <message no="1.11" type="msgr">
          <condition>
             <else>SHOW,2</else>
-            <if>READ,1.4,1</if>
+            <if>READ,1.9,1</if>
             <then>SHOW,1</then>
          </condition>
          <msg no="1">
@@ -127,7 +190,7 @@
             </typing>
          </msg>
       </message>
-      <message no="1.7" type="msgr">
+      <message no="1.12" type="msgr">
          <msg no="1">
             <content>Wanna hang out at new year?</content>
             <end_delay>0</end_delay>
@@ -143,7 +206,7 @@
             </typing>
          </msg>
       </message>
-      <message no="1.8" type="player">
+      <message no="1.13" type="player">
          <reply no="1">
             <content>Sure</content>
             <preview>Yes</preview>
@@ -165,10 +228,10 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.9" type="msgr">
+      <message no="1.14" type="msgr">
          <condition>
             <else>SHOW,2</else>
-            <if>READ,1.8,1</if>
+            <if>READ,1.13,1</if>
             <then>SHOW,1</then>
          </condition>
          <msg no="1">
@@ -182,7 +245,7 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>Why not?😐</content>
+            <content>Why not? 😐</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -192,10 +255,10 @@
             </typing>
          </msg>
       </message>
-      <message no="1.10" type="msgr">
+      <message no="1.15" type="msgr">
          <condition>
-            <if>READ,1.9,2</if>
-            <then>SKIPTO,11</then>
+            <if>READ,1.14,2</if>
+            <then>SKIPTO,18</then>
          </condition>
          <msg no="1">
             <content>Let&apos;s meet up at the park at 6PM 😉</content>
@@ -208,10 +271,10 @@
             </typing>
          </msg>
       </message>
-      <message no="1.11" type="player">
+      <message no="1.16" type="player">
          <condition>
-            <if>READ,1.10,1</if>
-            <then>SKIPTO,13</then>
+            <if>READ,1.15,1</if>
+            <then>SKIPTO,18</then>
          </condition>
          <reply no="1">
             <content>I wanted to prepare something special for you.</content>
@@ -224,7 +287,7 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.12" type="msgr">
+      <message no="1.17" type="msgr">
          <msg no="1">
             <content>Dude, just do it after we meet up 😂</content>
             <end_delay>0</end_delay>
@@ -236,7 +299,7 @@
             </typing>
          </msg>
       </message>
-      <message no="1.13" type="player">
+      <message no="1.18" type="player">
          <reply no="1">
             <content>Oh, ok. Great idea</content>
             <preview>k</preview>
@@ -248,15 +311,15 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.14" type="player">
+      <message no="1.19" type="player">
          <condition>
-            <if>true</if>
+            <if>TRUE</if>
             <then>CHANGE_DATE,01/01/2020</then>
             <then>CHANGE_TIME,20:00</then>
             <then>FADE_MSG,1,At the meet up</then>
          </condition>
          <reply no="1">
-            <content>Where are you? 😠</content>
+            <content>Where are you?? 😠</content>
             <preview>where</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -266,9 +329,9 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.15" type="player">
+      <message no="1.20" type="player">
          <reply no="1">
-            <content>I&apos;ve been waiting for 2 hours already 👿</content>
+            <content>I&apos;ve been waiting for two hours already 😡</content>
             <preview>wait</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -278,7 +341,7 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.16" type="msgr">
+      <message no="1.21" type="msgr">
          <msg no="1">
             <content>Oh, I&apos;m very sorry. My boyfriend who will fetch me had some tire issues.</content>
             <end_delay>0</end_delay>
@@ -294,7 +357,7 @@
             </typing>
          </msg>
       </message>
-      <message no="1.17" type="player">
+      <message no="1.22" type="player">
          <reply no="1">
             <content>What&apos;s his name?</content>
             <preview>What&apos;s his name?</preview>
@@ -316,10 +379,10 @@
             </send_duration>
          </reply>
       </message>
-      <message no="1.18" type="msgr">
+      <message no="1.23" type="msgr">
          <condition>
             <else>SHOW,2</else>
-            <if>READ,1.17,1</if>
+            <if>READ,1.22,1</if>
             <then>SHOW,1</then>
          </condition>
          <msg no="1">
@@ -333,8 +396,8 @@
             </typing>
          </msg>
          <msg no="2">
-            <content>I feel safer with Mike. 😋</content>
-            <end_delay>5000</end_delay>
+            <content>I feel safer with Mike. 😛</content>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
@@ -343,25 +406,24 @@
             </typing>
          </msg>
       </message>
-	  <message no="1.19" type="msgr">
-		<msg no="1">
-		<content>@expr+Suddenly, you feel something inside you</content>
-		<end_delay>500</end_delay>
-            <end>delay</end>
+      <message no="1.24" type="msgr">
+         <msg no="1">
+            <content>@expr+Suddenly, you feel something inside you</content>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>1</toggle>
+                  <toggle>1000</toggle>
                </toggles>
             </typing>
-		</msg>
-		</message>
-      <message no="1.20" type="player">
-        <condition>
+         </msg>
+      </message>
+      <message no="1.25" type="player">
+         <condition>
             <else>SHOW,1</else>
-            <if>READ,1.18,1</if>
+            <if>READ,1.23,1</if>
             <then>SHOW,2</then>
-        </condition>
+         </condition>
          <reply no="1">
             <content>Oh.</content>
             <preview>Oh</preview>
@@ -383,10 +445,110 @@
             </send_duration>
          </reply>
       </message>
-      <msgr_dp>nic.png</msgr_dp>
+      <message no="1.26" type="player">
+         <reply no="1">
+            <content>You guys hang out often?</content>
+            <preview>hang</preview>
+            <send_duration>
+               <delivered>500</delivered>
+               <reply>500</reply>
+               <seen>500</seen>
+               <sent>500</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <message no="1.27" type="msgr">
+         <msg no="1">
+            <content>Of course! Haha</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>3692</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.28" type="player">
+         <reply no="1">
+            <content>Well, thats good to hear!</content>
+            <preview>good</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <message no="1.29" type="msgr">
+         <msg no="1">
+            <content>Whadya up to next?</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="5">
+                  <toggle>1092</toggle>
+                  <toggle>988</toggle>
+                  <toggle>574</toggle>
+                  <toggle>2193</toggle>
+                  <toggle>3448</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.30" type="player">
+         <reply no="1">
+            <content>Oh, nothing. Just going to do my normal stuff</content>
+            <preview>oh</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <message no="1.31" type="msgr">
+         <msg no="1">
+            <content>That&apos;s nice to hear</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>2924</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.32" type="msgr">
+         <msg no="1">
+            <content>@expr+You realized that you&apos;re just making the conversation longer</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="1.33" type="player">
+         <reply no="1">
+            <content>ok! Bye then</content>
+            <preview>ok</preview>
+            <send_duration>
+               <delivered>400</delivered>
+               <reply>2000</reply>
+               <seen>800</seen>
+               <sent>600</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
-      <chname>The Day</chname>
+      <chname>The Meetup</chname>
       <custom_names>yes</custom_names>
       <custom_dp>yes</custom_dp>
       <real_talk>false</real_talk>
@@ -397,8 +559,8 @@
       <chdesc>You talked to Mike after finding out that they were together.</chdesc>
       <message no="2.1" type="player">
          <reply no="1">
-            <content>DUDE, WHAT. THE. HELL. You can&apos;t just trick somebody into going out with you. After they had an amnesia</content>
-            <preview>x</preview>
+            <content>DUDE, WHAT. THE. HELL. You can&apos;t just trick somebody into going out with you after they had an amnesia</content>
+            <preview>what</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -419,20 +581,21 @@
             </send_duration>
          </reply>
       </message>
-	  <message no="2.3" type="msgr">
+      <message no="2.3" type="msgr">
          <msg no="1">
             <content>@expr+Mike will remember that.</content>
-            <end_delay>3000</end_delay>
+            <end_delay>2000</end_delay>
+            <end>delay</end>
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>2000</toggle>
+                  <toggle>1000</toggle>
                </toggles>
             </typing>
          </msg>
       </message>
       <message no="2.4" type="msgr">
-        <msg no="1">
+         <msg no="1">
             <content>What? What do you mean? 😕</content>
             <end_delay>0</end_delay>
             <typing>
@@ -445,11 +608,11 @@
                   <toggle>781</toggle>
                </toggles>
             </typing>
-        </msg>
+         </msg>
       </message>
       <message no="2.5" type="player">
          <reply no="1">
-            <content>Remember %msgr_full%? The one that got you busted?</content>
+            <content>Remember %msgr_mfull%? The one that got you busted?</content>
             <preview>end</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -486,7 +649,8 @@
       <message no="2.8" type="msgr">
          <msg no="1">
             <content>Besides, Jenny changed. She&apos;s a lot better now.</content>
-            <end_delay>0</end_delay>
+            <end_delay>2000</end_delay>
+            <end>delay</end>
             <typing>
                <show>yes</show>
                <toggles length="1">
@@ -495,10 +659,11 @@
             </typing>
          </msg>
       </message>
-	  <message no="2.9" type="msgr">
+      <message no="2.9" type="msgr">
          <msg no="1">
-            <content>@expr+You were amazed by the news.</content>
-            <end_delay>10000</end_delay>
+            <content>@expr+You were amazed by the news</content>
+            <end_delay>3000</end_delay>
+            <end>delay</end>
             <typing>
                <show>yes</show>
                <toggles length="1">
@@ -514,7 +679,7 @@
          </condition>
          <reply no="1">
             <content>That&apos;s great!</content>
-            <preview>x</preview>
+            <preview>d</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -526,7 +691,7 @@
       <message no="2.11" type="player">
          <reply no="1">
             <content>Good for you</content>
-            <preview>good</preview>
+            <preview>Gb</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -550,7 +715,7 @@
       <message no="2.13" type="player">
          <reply no="1">
             <content>You too</content>
-            <preview>x</preview>
+            <preview>Y</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -559,21 +724,21 @@
             </send_duration>
          </reply>
       </message>
-      <msgr_dp>mike.jpg</msgr_dp>
+      <msgr_dp>2639867920.png</msgr_dp>
       <msgr_name>Mike Fisher</msgr_name>
       <msgr_nickname>Mike</msgr_nickname>
-      <chname>A Talk With Mike</chname>
+      <chname>The Talk</chname>
       <custom_names>no</custom_names>
       <custom_dp>yes</custom_dp>
       <real_talk>false</real_talk>
-      <chtime>23:00:00</chtime>
+      <chtime>22:00:00</chtime>
    </chapter>
    <chapter no="3">
       <chdate>02/14/2020</chdate>
       <chdesc>At least that&apos;s what you think </chdesc>
       <message no="3.1" type="player">
          <reply no="1">
-            <content>Happy Birthday 😂😂🎂🎈🎉🎉</content>
+            <content>Happy birthday! 😂😂🎂🎈🎉🎉</content>
             <preview>birlrth</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -590,7 +755,7 @@
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>2496</toggle>
+                  <toggle>3410</toggle>
                </toggles>
             </typing>
          </msg>
@@ -618,13 +783,17 @@
       <message no="3.4" type="player">
          <reply no="1">
             <content>Hey umm. Do you really have a boyfriend?</content>
-            <preview>Boyfriend?</preview>
+            <preview>Boyfriend? </preview>
             <send_duration>
                <delivered>500</delivered>
                <reply>3000</reply>
                <seen>100</seen>
                <sent>10</sent>
             </send_duration>
+            <typo>
+               <concat>!</concat>
+               <remove_until>1</remove_until>
+            </typo>
          </reply>
          <reply no="2">
             <content>How&apos;s college?</content>
@@ -640,7 +809,7 @@
       <message no="3.5" type="player">
          <condition>
             <if>READ,3.4,2</if>
-            <then>SKIPTO,14</then>
+            <then>SKIPTO,19</then>
          </condition>
          <reply no="1">
             <content>I was just wondering. Hope you don&apos;t get offended.</content>
@@ -733,7 +902,7 @@
       </message>
       <message no="3.12" type="player">
          <reply no="1">
-            <content>Really? You got me so hard 😂😂</content>
+            <content>Woah! You got me there 😂😂</content>
             <preview>J</preview>
             <send_duration>
                <delivered>1</delivered>
@@ -756,10 +925,6 @@
          </msg>
       </message>
       <message no="3.14" type="msgr">
-         <condition>
-            <if>READ,3.11,1</if>
-            <then>SKIPTO,28</then>
-         </condition>
          <msg no="1">
             <content>I learned a lot</content>
             <end_delay>0</end_delay>
@@ -773,7 +938,7 @@
       </message>
       <message no="3.15" type="player">
          <reply no="1">
-            <content>What did you learn then?</content>
+            <content>What did you learn?</content>
             <preview>wat</preview>
             <send_duration>
                <delivered>500</delivered>
@@ -917,7 +1082,7 @@
       </message>
       <message no="3.26" type="player">
          <reply no="1">
-            <content>Uhmmm I don&apos;t really remember that much. I think it&apos;s been 5 years.</content>
+            <content>Uhmm</content>
             <preview>Don&apos;t tell the truth.</preview>
             <send_duration>
                <delivered>500</delivered>
@@ -925,9 +1090,17 @@
                <seen>100</seen>
                <sent>10</sent>
             </send_duration>
+            <typo>
+               <concat>m</concat>
+               <remove_until>1</remove_until>
+            </typo>
+            <typo>
+               <concat> I don&apos;t really remember that much. I think it&apos;s been 5 years.</concat>
+               <remove_until>0</remove_until>
+            </typo>
          </reply>
          <reply no="2">
-            <content>Well...I do recall that he was your bestfriend</content>
+            <content>Well...I do recall that he was your bestfriend...</content>
             <preview>Tell the truth.</preview>
             <send_duration>
                <delivered>100</delivered>
@@ -935,12 +1108,16 @@
                <seen>500</seen>
                <sent>1000</sent>
             </send_duration>
-			<typo>
-				<concat>.</concat>
-				<remove_until>47</remove_until>
-			</typo>
-			<typo>
-               <concat>Sorry but I have bad memory</concat>
+            <typo>
+               <concat> </concat>
+               <remove_until>50</remove_until>
+            </typo>
+            <typo>
+               <concat>Sorrt</concat>
+               <remove_until>1</remove_until>
+            </typo>
+            <typo>
+               <concat>y, but I have a bad memory</concat>
                <remove_until>0</remove_until>
             </typo>
          </reply>
@@ -1019,17 +1196,17 @@
       </message>
       <message no="3.33" type="msgr">
          <msg no="1">
-            <content>@expr+You will remember it.</content>
+            <content>@expr+You will remember her birthday</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
-                <toggles length="1">
-					<toggle>1000</toggle>
-				</toggles>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
             </typing>
          </msg>
       </message>
-      <msgr_dp>nic.png</msgr_dp>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
       <chname>Her Birthday.</chname>
@@ -1106,12 +1283,12 @@
             <then>SKIPTO,6</then>
          </condition>
          <msg no="1">
-            <content>😂😂</content>
+            <content>😂😂😂</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>1976</toggle>
+                  <toggle>1515</toggle>
                </toggles>
             </typing>
          </msg>
@@ -1154,7 +1331,7 @@
       </message>
       <message no="4.9" type="player">
          <reply no="1">
-            <content>Happy birthday!🎉🎉🎈🎂</content>
+            <content>Happy birthday! 🎉🎉🎈🎂</content>
             <preview>H</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1166,7 +1343,7 @@
       </message>
       <message no="4.10" type="msgr">
          <msg no="1">
-            <content>Where&apos;s my gift?😂</content>
+            <content>Where&apos;s my gift? 😂</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1188,7 +1365,7 @@
             </send_duration>
          </reply>
          <reply no="2">
-            <content>Check out your mailbox 😂</content>
+            <content>Check your mailbox 😅</content>
             <preview>Tell her</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1213,7 +1390,7 @@
       <message no="4.13" type="player">
          <reply no="1">
             <content>A book about romance</content>
-            <preview>Book about romance</preview>
+            <preview>Romance book</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -1234,9 +1411,9 @@
       </message>
       <message no="4.14" type="msgr">
          <condition>
-            <else>VAR,gbook,psychology</else>
+            <else>VAR,gbook,Psychology</else>
             <if>READ,4.13,1</if>
-            <then>VAR,gbook,romance</then>
+            <then>VAR,gbook,Romance</then>
          </condition>
          <msg no="1">
             <content>It&apos;s a book about %gbook%. Thanks 😊</content>
@@ -1273,10 +1450,10 @@
             </typing>
          </msg>
       </message>
-      <msgr_dp>nic.png</msgr_dp>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
-      <chname>Birthday </chname>
+      <chname>The Birthday </chname>
       <custom_names>yes</custom_names>
       <custom_dp>yes</custom_dp>
       <real_talk>false</real_talk>
@@ -1284,11 +1461,11 @@
    </chapter>
    <chapter no="5">
       <chdate>10/29/2020</chdate>
-      <chdesc>Something</chdesc>
+      <chdesc>Something </chdesc>
       <message no="5.1" type="player">
          <reply no="1">
             <content>Hi %msgr_nick% </content>
-            <preview>x</preview>
+            <preview>H</preview>
             <send_duration>
                <delivered>3</delivered>
                <reply>400</reply>
@@ -1375,7 +1552,7 @@
             <then>SHOW,1</then>
          </condition>
          <msg no="1">
-            <content>Cool!</content>
+            <content>Oh cool!</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1399,10 +1576,10 @@
          <condition>
             <else>SHOW,1</else>
             <if>READ,5.7,2</if>
-            <then>SKIPTO,14</then>
+            <then>SKIPTO,19</then>
          </condition>
          <msg no="1">
-            <content>Can I join? Hahaha😂😂😂</content>
+            <content>Can I join? Hahaha 😂😂😂</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1426,7 +1603,7 @@
       </message>
       <message no="5.10" type="player">
          <reply no="1">
-            <content>Will Mike be joining? 😁</content>
+            <content>Will Mike be joining us? 😁</content>
             <preview>Mike</preview>
             <send_duration>
                <delivered>1</delivered>
@@ -1479,7 +1656,7 @@
       <message no="5.14" type="player">
          <condition>
             <if>READ,5.13,1</if>
-            <then>SKIPTO,16</then>
+            <then>SKIPTO,21</then>
          </condition>
          <reply no="1">
             <content>Not anymore I am</content>
@@ -1507,7 +1684,7 @@
       </message>
       <message no="5.16" type="msgr">
          <msg no="1">
-            <content>I&apos;m bored...😐</content>
+            <content>I&apos;m bored... 😐</content>
             <end_delay>1000</end_delay>
             <end>delay</end>
             <typing>
@@ -1572,129 +1749,134 @@
             </typing>
          </msg>
       </message>
-	  <message no="5.21" type="msgr">
-		<msg no="1">
-			<content>You wore a condom right?</content>
-			<end_delay>4000</end_delay>
-			<end>delay</end>
-			<typing>
-				<show>yes</show>
-				<toggles length="1">
-					<toggle>2000</toggle>
-				</toggles>
-			</typing>
-		</msg>
-		</message>
-		<message no="5.22" type="player">
-			<reply no="1">
-				<content>What? What do you mean</content>
-				<preview>What?</preview>
-				<send_duration>
-					<delivered>1500</delivered>
-					<reply>300</reply>
-					<seen>600</seen>
-					<sent>500</sent>
-				</send_duration>
-			</reply>
-			<reply no="2">
-				<content>Of course!</content>
-				<preview>Yes</preview>
-				<send_duration>
-					<delivered>1000</delivered>
-					<reply>1000</reply>
-					<seen>1000</seen>
-					<sent>1000</sent>
-				</send_duration>
-			</reply>
-		</message>
-		<message no="5.23" type="msgr">
-			<condition>
-				<if>READ,5.22,1</if>
-				<then>SHOW,2</then>
-				<else>SHOW,1</else>
-			</condition>
-			<msg no="1">
-				<content>Phew!</content>
-				<end_delay>2000</end_delay>
-				<typing>
-					<show>yes</show>
-					<toggles length="1">
-						<toggle>2300</toggle>
-						<toggle>1065</toggle>
-					</toggles>
-				</typing>
-			</msg>
-			<msg no="2">
-				<content>Just kidding!</content>
-				<end_delay>100</end_delay>
-				<typing>
-					<show>yes</show>
-					<toggles length="1">
-						<toggle>1000</toggle>
-					</toggles>
-				</typing>
-			</msg>
-		</message>
-		<message no="5.24" type="player">
-			<condition>
-				<if>READ,5.23,2</if>
-				<then>SHOW,1</then>
-				<else>SKIPTO,26</else>
-			</condition>
-			<reply no="1">
-				<content>You scared me hahaha</content>
-				<preview>x</preview>
-				<send_duration>
-					<delivered>1000</delivered>
-					<reply>1000</reply>
-					<seen>1000</seen>
-					<sent>1000</sent>
-				</send_duration>
-			</reply>
-			<reply no="2">
-				<content>Hahahaha</content>
-				<preview>x</preview>
-				<send_duration>
-					<delivered>1000</delivered>
-					<reply>1000</reply>
-					<seen>1000</seem>
-					<sent>1000</sent>
-				</send_duration>
-			</reply>
-		</message>
-		<message no="5.25" type="msgr">
-			<msg no="1">
-				<content>It was a joke</content>
-				<end_delay>500</end_delay>
-				<typing>
-					<show>yes</show>
-					<toggles length="1">
-						<toggle>1000</toggle>
-					</toggles>
-				</typing>
-			</msg>
-		</message>
-		<message no="5.26" type="player">
-			<condition>
-			<if>READ,5.24,2</if>
-			<then>END_CHAPTER</then>
-			<else>SHOW,1</else>
-			</condition>
-			<reply no="1">
-				<content>I know</content>
-				<preview>x</preview>
-				<send_duration>
-					<delivered>1000</delivered>
-					<reply>1000</reply>
-					<seen>1000</seen>
-					<sent>1000</sent>
-				</send_duration>
-			</reply>
-		</message>
-      <msgr_dp>nic.png</msgr_dp>
+      <message no="5.21" type="msgr">
+         <msg no="1">
+            <content>You wore a condom right?</content>
+            <end_delay>4000</end_delay>
+            <end>delay</end>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1996</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="5.22" type="player">
+         <reply no="1">
+            <content>What? What do you mean?</content>
+            <preview>What? </preview>
+            <send_duration>
+               <delivered>500</delivered>
+               <reply>600</reply>
+               <seen>1500</seen>
+               <sent>300</sent>
+            </send_duration>
+         </reply>
+         <reply no="2">
+            <content>Of course!</content>
+            <preview>Yes</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <message no="5.23" type="msgr">
+         <condition>
+            <else>SHOW,2</else>
+            <if>READ,5.22,2</if>
+            <then>SHOW,1</then>
+         </condition>
+         <msg no="1">
+            <content>Phew!</content>
+            <end_delay>2000</end_delay>
+            <end>delay</end>
+            <typing>
+               <show>yes</show>
+               <toggles length="5">
+                  <toggle>1603</toggle>
+                  <toggle>1669</toggle>
+                  <toggle>1858</toggle>
+                  <toggle>986</toggle>
+                  <toggle>1270</toggle>
+               </toggles>
+            </typing>
+         </msg>
+         <msg no="2">
+            <content>Just kidding!</content>
+            <end_delay>1000</end_delay>
+            <end>delay</end>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1516</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="5.24" type="player">
+         <condition>
+            <else>SHOW,2</else>
+            <if>READ,5.23,2</if>
+            <then>SHOW,1</then>
+         </condition>
+         <reply no="1">
+            <content>You scared me hahahaha</content>
+            <preview>X</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+         <reply no="2">
+            <content>Hahahaha</content>
+            <preview>Ha</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <message no="5.25" type="msgr">
+         <msg no="1">
+            <content>It was a joke</content>
+            <end_delay>0</end_delay>
+            <typing>
+               <show>yes</show>
+               <toggles length="1">
+                  <toggle>1000</toggle>
+               </toggles>
+            </typing>
+         </msg>
+      </message>
+      <message no="5.26" type="player">
+         <condition>
+            <else>SHOW,1</else>
+            <if>READ,5.24,2</if>
+            <then>END_CHAPTER</then>
+         </condition>
+         <reply no="1">
+            <content>I know</content>
+            <preview>Know</preview>
+            <send_duration>
+               <delivered>1000</delivered>
+               <reply>1000</reply>
+               <seen>1000</seen>
+               <sent>1000</sent>
+            </send_duration>
+         </reply>
+      </message>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
-      <chname>Halloween</chname>
+      <chname>Halloween </chname>
       <custom_names>yes</custom_names>
       <custom_dp>yes</custom_dp>
       <real_talk>false</real_talk>
@@ -1742,7 +1924,7 @@
       <message no="6.4" type="player">
          <reply no="1">
             <content>That prick...</content>
-            <preview>x</preview>
+            <preview>Price </preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -1825,7 +2007,7 @@
       </message>
       <message no="6.11" type="msgr">
          <msg no="1">
-            <content>Our teacher is giving us too many projects. 😣😣😥😦</content>
+            <content>Our teacher is giving us too many projects. 😣😣🙂😥😩</content>
             <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
@@ -1850,11 +2032,11 @@
       <message no="6.13" type="msgr">
          <msg no="1">
             <content>Got any time to hang out?</content>
-            <end_delay>2000</end_delay>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>500</toggle>
+                  <toggle>1000</toggle>
                </toggles>
             </typing>
          </msg>
@@ -1862,11 +2044,11 @@
       <message no="6.14" type="msgr">
          <msg no="1">
             <content>I&apos;m really tired of all these projects.</content>
-            <end_delay>3000</end_delay>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
-                  <toggle>4000</toggle>
+                  <toggle>1000</toggle>
                </toggles>
             </typing>
          </msg>
@@ -1874,7 +2056,7 @@
       <message no="6.15" type="msgr">
          <msg no="1">
             <content>Besides, it&apos;s almost Christmas break</content>
-            <end_delay>800</end_delay>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
@@ -1897,7 +2079,7 @@
       </message>
       <message no="6.17" type="player">
          <reply no="1">
-            <content>Let me check my schedule first 😋</content>
+            <content>Let me check my schedule first 😛</content>
             <preview>Let</preview>
             <send_duration>
                <delivered>1000</delivered>
@@ -1922,7 +2104,7 @@
       <message no="6.19" type="msgr">
          <msg no="1">
             <content>Great! I&apos;ll meet you at the park</content>
-            <end_delay>2500</end_delay>
+            <end_delay>0</end_delay>
             <typing>
                <show>yes</show>
                <toggles length="1">
@@ -1943,10 +2125,10 @@
             </typing>
          </msg>
       </message>
-      <msgr_dp>nic.png</msgr_dp>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
-      <chname>School Days...</chname>
+      <chname>School Days... </chname>
       <custom_names>yes</custom_names>
       <custom_dp>yes</custom_dp>
       <real_talk>false</real_talk>
@@ -1954,15 +2136,15 @@
    </chapter>
    <chapter no="7">
       <chdate>02/05/2021</chdate>
-      <chdesc>This is actually my birthday. shhhhh</chdesc>
+      <chdesc>Le parc</chdesc>
       <message no="7.1" type="player">
          <condition>
             <if>TRUE</if>
-            <then>RT_SET_STAT,You saw %msgr_fname% by the bridge </then>
+            <then>SHOW_SNACK,2,You saw Nic by the bridge </then>
          </condition>
          <reply no="1">
             <content>Is that who I think it is?</content>
-            <preview>x</preview>
+            <preview>Is that</preview>
             <send_duration>
                <delivered>1000</delivered>
                <reply>1000</reply>
@@ -1971,116 +2153,66 @@
             </send_duration>
          </reply>
       </message>
-		<message no="7.2" type="msgr">
-		<msg no="1">
-		<content>@expr+You approached her</content>
-		<end_delay>750</end_delay>
-		<end>delay</end>
-            <typing>
-               <show>yes</show>
-               <toggles length="1">
-                  <toggle>1</toggle>
-               </toggles>
-            </typing>
-         </msg>
-		</message>
-      <message no="7.3" type="player">
-		<condition>
-			<if>true</if>
-			<then>RT_SET_STAT,You are talking to %msgr_name%</then>
-		</condition>
+      <message no="7.2" type="player">
+         <condition>
+            <if>TRUE</if>
+            <then>SHOW_SNACK,2,You approached her</then>
+         </condition>
          <reply no="1">
             <content>Wow! You&apos;re not late like last time.</content>
             <preview>Wow</preview>
             <send_duration>
-               <delivered>500</delivered>
+               <delivered>1000</delivered>
                <reply>1000</reply>
                <seen>1000</seen>
                <sent>1000</sent>
             </send_duration>
          </reply>
       </message>
-	  <message no="7.4" type="msgr">
-		<msg no="1">
-			<content>Of course!</content>
-		<end_delay>0</end_delay>
-		<end>delay</end>
-			<typing>
-				<show>yes</show>
-				<toggles length="1">
-					<toggle>1700</toggle>
-				</toggles>
-			</typing>
-		</msg>
-		</message>
-		<message no="7.5" type="msgr">
-			<msg no="1">
-				<content>I have learned from the past.</content>
-			<end_delay>0</end_delay>
-			<end>delay</end>
-				<typing>
-				<show>yes</show>
-					<toggles length="1">
-					<toggle>1500</toggle>
-					</toggles>
-				</typing>
-			</msg>
-		</message>
-		<message no="7.6" type="player">
-			<reply no="1">
-				<content>Oh really?</content>
-            <preview>Wow</preview>
-            <send_duration>
-               <delivered>500</delivered>
-               <reply>1000</reply>
-               <seen>1000</seen>
-               <sent>1000</sent>
-            </send_duration>
-         </reply>
-		</message>
-      <msgr_dp>nic.png</msgr_dp>
+      <msgr_dp>3024916765.png</msgr_dp>
       <msgr_name>Nicole Tyler </msgr_name>
       <msgr_nickname>Nic</msgr_nickname>
-      <chname>At The Park</chname>
+      <chname>The Park</chname>
       <custom_names>yes</custom_names>
       <custom_dp>yes</custom_dp>
+      <real_talk_bg>night_park.png</real_talk_bg>
       <real_talk>true</real_talk>
-	  <real_talk_bg>night_park.png</real_talk_bg>
       <chtime>18:30:00</chtime>
    </chapter>
    <date_created>1473154297206</date_created>
-   <date_modified>1483801623649</date_modified>
-   <desc>What if she remembered everything? 
+   <date_modified>1506771088428</date_modified>
+   <desc>Koolie is currently being held hostage in our basement, if you want to save him, download the story multiple times. The story is not infected with a virus, trust™ me. We want a clean 150K downloads. If you do not comply, we will eliminate the Aids™ man. Thank you.
 
-I created a discord server hope you guys join us
-https://discord.gg/C5x4gad 
+What if she remembered everything? 
 
-I cannot update any longer because my phone got fried. I may upload using BlueStacks but it lags my pc.
+The official sequel to Seen
 
-An unofficial sequel to the story &quot;Seen&quot; by Polychroma Games. 
+Official Seen Discord server:
+https://discord.gg/cBm89Vh
 
-Icon photoshoped by me
-Flower photographed by me
-Mike&apos;s pic is now from the Original Seen
-Disabled skippable_ch so it won&quot;t affect chapter 2 with Mike
-Nicole has different replies. No different endings...yet
+A sequel to the story &quot;Seen&quot; by Polychroma Games.  
+
+Story Updates: (9/26/2017)
+###
+-Fixed instant end on chapter 4
+-Added few dialogues in some chapters
+###
+
+This story is open-sourced. Here&apos;s the GitHub link, you can also see the update progress there
+https://github.com/KoolieAid/Seen-A-New-Beginning
+
+Some credits:
+###
+Icon photoshoped by Koolie Aid
+Flower photographed by Koolie Aid
+Mike&apos;s pic is from Google Images
+###
 
 Author&apos;s notes:
-The story is now open-source. You can contribute in GitHub.
-Link: https://github.com/KoolieAid/Seen-A-New-Beginning
+This is one of the oldest stories here in Story World. I believe that this story is the 6th posted story. 
 
-Shoutouts:
-&quot;Seen: The Manual&quot; by Koolie Aid
-&quot;Seem: Porn&quot; by l33t, MarinatedTuna, ISuckatMakingStories, uploaded by Koolie Aid
-&quot;Shrek is love, Shrek is life&quot; by Zbv
-&quot;Run Along&quot; by Poor Alvin
-&quot;Seen: Repressed&quot; by MarinatedTuna and Skyfall
-
-This story one of the oldest stories here in Story World. I believe that this story is ranked as 6th posted story. 
-
-
-      THIS PROJECT IS NEVER FINISHED</desc>
-   <name>Seen: A New Beginning</name>
+Dear readers, sadly, Koolie Aid died. This is his brother doing his will -uploading this story every week.</desc>
+   <name>Seen: Old Connections</name>
    <player_name>Mark Blythe</player_name>
    <player_nickname>Mark</player_nickname>
    <custom_names>yes</custom_names>
